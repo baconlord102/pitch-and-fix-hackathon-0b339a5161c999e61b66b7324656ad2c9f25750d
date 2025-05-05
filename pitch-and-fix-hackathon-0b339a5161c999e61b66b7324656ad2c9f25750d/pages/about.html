@@ -1,86 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../css/cat.css">
-    <script src="https://kit.fontawesome.com/4b64079cce.js" crossorigin="anonymous" defer ></script>
-    <script src="../js/main.js" defer></script>
-    <script src="../js/cart.js" defer></script>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/cat.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="../js/main.js" defer></script>
+  <script src="../js/cart.js" defer></script>
+  <script type="text/javascript" src="../js/darkmode.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-           <a href="../index.html"> <img src="../images/ShopEase-logo.svg" alt="ShopEase Logo" class="logo"> </a>
+  <header>
+    <button id="theme-switch">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+    </button>
+    <div class="logo-container">
+      <a href="../index.html"><img src="../images/ShopEase-logo.svg" alt="ShopEase Logo" class="logo"></a>
+    </div>
+    <nav class="main-nav">
+      <ul id="nav-items">
+        <li id="nav-item"><a href="../index.html">Home</a></li>
+        <li id="nav-item"><a href="../pages/products.html" class="active">Products</a></li>
+        <li id="nav-item"><a href="./categories.html">Categories</a></li>
+        <li id="nav-item"><a href="./about.html">About Us</a></li>
+        <li id="nav-item"><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="cart-container">
+      <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+      </div>
+      <div class="cart-dropdown" style="display: none;">
+        <div class="cart-items"></div>
+        <a href="cart.html"><span class="cart-link">View My Cart</span></a>
+        <div class="cart-total">
+          <p>Total: $<span id="cart-total-amount">0.00</span></p>
         </div>
-        <nav class="main-nav">
-            <ul id="nav-items">
-                <li id="nav-item"><a href="../index.html" class="active">Home</a></li>
-                <li id="nav-item"><a href="../pages/product-detail.html">Products</a></li>
-                <li id="nav-item"><a href="../pages/categories.html">Categories</a></li>
-                <li id="nav-item"><a href="../pages/about.html">About Us</a></li>
-                <li id="nav-item"><a href="../pages/contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <a href="cart.html"><button class="checkout-btn">Checkout</button></a>
+      </div>
+    </div>
+  </header>
 
-        
-        <div class="cart-container">
-            <div class="cart-icon">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="cart-count">0</span>
-            </div>
-            <div class="cart-dropdown" style="display: none;">
-                <div class="cart-items">
-                    <!-- Cart items will be added here by JavaScript -->
-                </div>
-                <div class="cart-total">
-                    <p>Total: $<span id="cart-total-amount">0.00</span></p>
-                </div>
-                <button class="checkout-btn">Checkout</button>
-            </div>
-        </div>
-    </header>
-   <div class="about-us-container"> 
-    <p class="about-us">Hey there! We’re Shop Ease — and we’ve been helping folks shop smarter (and easier) for over 25 years. What started as a small family-run spot has grown into a place people know and trust for great finds, fair prices, and a no-stress experience. We’re all about keeping things simple, friendly, and reliable, whether you're browsing online or popping by in person. Thanks for sticking with us all these years — we’re just getting started!</p>
-   </div>
+  <main>
+    <section class="about-hero">
+      <h1>About ShopEase</h1>
+      <p>Empowering modern shoppers with confidence, convenience, and community.</p>
+    </section>
 
+    <section class="about-vision">
+      <h2>Who We Are</h2>
+      <p>ShopEase was founded with one purpose: to make online shopping feel personal again. We believe everyone deserves access to quality products at fair prices, supported by transparent service and a team that truly listens.</p>
+    </section>
 
-   <footer>
+    <section class="about-team">
+      <h2>Meet Our Team</h2>
+      <p>Our diverse crew of designers, developers, and customer support specialists work remotely from around the globe, united by a passion for innovation and retail. We're not just a business—we're a digital family committed to making eCommerce better for everyone.</p>
+    </section>
+
+    <section class="about-values">
+      <h2>Our Values</h2>
+      <ul>
+        <li><strong>Transparency:</strong> We’re honest about pricing, policies, and partnerships.</li>
+        <li><strong>Customer-Centered:</strong> Every decision starts with the user in mind.</li>
+        <li><strong>Accessibility:</strong> Affordable options for every lifestyle.</li>
+        <li><strong>Growth:</strong> We're always learning, improving, and evolving.</li>
+      </ul>
+    </section>
+
+    <section class="about-cta">
+      <h2>Join Our Mission</h2>
+      <p>Whether you're shopping, partnering, or just browsing, we're glad you're here. Let's redefine retail—together.</p>
+    </section>
+  </main>
+
+  <footer>
     <div class="footer-columns">
         <div class="footer-column">
             <h3>Shop</h3>
             <ul>
-                <li><a href="products.html">All Products</a></li>
-                <li><a href="categories.html">Categories</a></li>
-                <li><a href="deals.html">Deals</a></li>
-                <li><a href="new-arrivals.html">New Arrivals</a></li>
+                <li><a href="pages/products.html">All Products</a></li>
+                <li><a href="pages/categories.html">Categories</a></li>
+                <li><a href="pages/deals.html">Deals</a></li>
+                <li><a href="pages/new-arrivals.html">New Arrivals</a></li>
             </ul>
         </div>
         <div class="footer-column">
             <h3>Customer Service</h3>
             <ul>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="shipping.html">Shipping & Returns</a></li>
-                <li><a href="terms.html">Terms & Conditions</a></li>
+                <li><a href="pages/contact.html">Contact Us</a></li>
+                <li><a href="pages/faq.html">FAQ</a></li>
+                <li><a href="pages/shipping.html">Shipping & Returns</a></li>
+                <li><a href="pages/terms.html">Terms & Conditions</a></li>
             </ul>
         </div>
         <div class="footer-column">
             <h3>About Us</h3>
             <ul>
-                <li><a href="about.html">Our Story</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="careers.html">Careers</a></li>
-                <li><a href="partners.html">Partners</a></li>
+                <li><a href="pages/about.html">Our Story</a></li>
+                <li><a href="pages/blog.html">Blog</a></li>
+                <li><a href="pages/careers.html">Careers</a></li>
+                <li><a href="pages/partners.html">Partners</a></li>
             </ul>
         </div>
         <div class="footer-column">
+
             <h3>Follow Us</h3>
             <ul class="social-links">
-                <!-- Intentional bug: closing tags missing -->
                 <li><a href="#"><i class="fab fa-facebook-f"></i>Facebook</li>
                 <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
                 <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>

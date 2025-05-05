@@ -1,95 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../css/cat.css">
-    <script src="https://kit.fontawesome.com/4b64079cce.js" crossorigin="anonymous" defer ></script>
-    <script src="../js/main.js" defer></script>
-    <script src="../js/cart.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopEase - FAQ</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/cat.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="../js/main.js" defer></script>
+  <script src="../js/cart.js" defer></script>
+  <script type="text/javascript" src="../js/darkmode.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-           <a href="../index.html"> <img src="../images/ShopEase-logo.svg" alt="ShopEase Logo" class="logo"> </a>
+  <header>
+    <button id="theme-switch">
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+    </button>
+    <div class="logo-container">
+      <a href="../index.html"><img src="../images/ShopEase-logo.svg" alt="ShopEase Logo" class="logo"></a>
+    </div>
+    <nav class="main-nav">
+      <ul id="nav-items">
+        <li id="nav-item"><a href="../index.html">Home</a></li>
+        <li id="nav-item"><a href="../pages/products.html" class="active">Products</a></li>
+        <li id="nav-item"><a href="./categories.html">Categories</a></li>
+        <li id="nav-item"><a href="./about.html">About Us</a></li>
+        <li id="nav-item"><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="cart-container">
+      <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+      </div>
+      <div class="cart-dropdown" style="display: none;">
+        <div class="cart-items"></div>
+        <a href="cart.html"><span class="cart-link">View My Cart</span></a>
+        <div class="cart-total">
+          <p>Total: $<span id="cart-total-amount">0.00</span></p>
         </div>
-        <nav class="main-nav">
-            <ul id="nav-items">
-                <li id="nav-item"><a href="../index.html" class="active">Home</a></li>
-                <li id="nav-item"><a href="../pages/product-detail.html">Products</a></li>
-                <li id="nav-item"><a href="../pages/categories.html">Categories</a></li>
-                <li id="nav-item"><a href="../pages/about.html">About Us</a></li>
-                <li id="nav-item"><a href="../pages/contact.html">Contact</a></li>
+        <a href="cart.html"><button class="checkout-btn">Checkout</button></a>
+      </div>
+    </div>
+  </header>
+    <div class="logo-container">
+      <a href="../index.html"><img src="../images/ShopEase-logo.svg" alt="ShopEase Logo" class="logo"></a>
+    </div>
+    <nav class="main-nav">
+      <ul id="nav-items">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="faq.html" class="active">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="faq-hero">
+      <h1>Customer Reviews</h1>
+      <p>What our customers are saying about their ShopEase experience:</p>
+    </section>
+
+    <section class="faq-list">
+      <div class="faq-item">
+        <h3><i class="fas fa-star"></i> "Best shopping experience I've ever had!"</h3>
+        <p>- Jessica M., ordered Bluetooth Speaker</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-star"></i> "Fast shipping and top-notch quality!"</h3>
+        <p>- Amir R., ordered Fitness Tracker</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-star"></i> "Everything arrived on time and in perfect condition."</h3>
+        <p>- Lena W., ordered Winter Jacket</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-star"></i> "Customer service was so friendly and helpful."</h3>
+        <p>- David H., ordered Kitchen Mixer</p>
+      </div>
+      <div class="faq-item">
+        <h3><i class="fas fa-star"></i> "Amazing prices for premium items. Will shop again!"</h3>
+        <p>- Rachel K., ordered Smart Watch</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-columns">
+        <div class="footer-column">
+            <h3>Shop</h3>
+            <ul>
+                <li><a href="pages/products.html">All Products</a></li>
+                <li><a href="pages/categories.html">Categories</a></li>
+                <li><a href="pages/deals.html">Deals</a></li>
+                <li><a href="pages/new-arrivals.html">New Arrivals</a></li>
             </ul>
-        </nav>
-        <div class="cart-container">
-            <div class="cart-icon">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="cart-count">0</span>
-            </div>
-            <div class="cart-dropdown" style="display: none;">
-                <div class="cart-items">
-                    <!-- Cart items will be added here by JavaScript -->
-                </div>
-                <div class="cart-total">
-                    <p>Total: $<span id="cart-total-amount">0.00</span></p>
-                </div>
-                <button class="checkout-btn">Checkout</button>
-            </div>
         </div>
-    </header>
-
-
-
-
-
-    <footer>
-        <div class="footer-columns">
-            <div class="footer-column">
-                <h3>Shop</h3>
-                <ul>
-                    <li><a href="products.html">All Products</a></li>
-                    <li><a href="categories.html">Categories</a></li>
-                    <li><a href="deals.html">Deals</a></li>
-                    <li><a href="new-arrivals.html">New Arrivals</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Customer Service</h3>
-                <ul>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="shipping.html">Shipping & Returns</a></li>
-                    <li><a href="terms.html">Terms & Conditions</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>About Us</h3>
-                <ul>
-                    <li><a href="about.html">Our Story</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="careers.html">Careers</a></li>
-                    <li><a href="partners.html">Partners</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3>Follow Us</h3>
-                <ul class="social-links">
-                    <!-- Intentional bug: closing tags missing -->
-                    <li><a href="#"><i class="fab fa-facebook-f"></i>Facebook</li>
-                    <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
-                    <li><a href="#"><i class="fab fa-pinterest"></i>Pinterest</a></li>
-                </ul>
-            </div>
+        <div class="footer-column">
+            <h3>Customer Service</h3>
+            <ul>
+                <li><a href="pages/contact.html">Contact Us</a></li>
+                <li><a href="pages/faq.html">FAQ</a></li>
+                <li><a href="pages/shipping.html">Shipping & Returns</a></li>
+                <li><a href="pages/terms.html">Terms & Conditions</a></li>
+            </ul>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 ShopEase. All Rights Reserved.</p>
+        <div class="footer-column">
+            <h3>About Us</h3>
+            <ul>
+                <li><a href="pages/about.html">Our Story</a></li>
+                <li><a href="pages/blog.html">Blog</a></li>
+                <li><a href="pages/careers.html">Careers</a></li>
+                <li><a href="pages/partners.html">Partners</a></li>
+            </ul>
         </div>
-    </footer>
+        <div class="footer-column">
+
+            <h3>Follow Us</h3>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-facebook-f"></i>Facebook</li>
+                <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                <li><a href="#"><i class="fab fa-pinterest"></i>Pinterest</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 ShopEase. All Rights Reserved.</p>
+    </div>
+</footer>
+
 
 </body>
 </html>
